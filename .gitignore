@@ -1,0 +1,8 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/MarsRobot/MarsRobot/obj
+/MarsRobot/MarsRobot.Application/obj
+/MarsRobot/MarsRobot.Tests/obj
+/MarsRobot/MarsRobotDomain/obj
