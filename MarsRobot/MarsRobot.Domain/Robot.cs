@@ -1,16 +1,8 @@
-﻿using System;
+﻿using MarsRobot.Domain.Enums;
 
-namespace MarsRobot.Tests
+namespace MarsRobot.Domain
 {
-    internal enum Directions
-    {
-        North,
-        East,
-        South,
-        West
-    }
-
-    internal class Robot
+    public class Robot
     {
         public int PositionX { get; set; } = 1;
         public int PositionY { get; set; } = 1;

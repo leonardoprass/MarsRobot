@@ -1,4 +1,6 @@
-using MarsRobot.Application.Grid;
+using MarsRobot.Application;
+using MarsRobot.Domain;
+using MarsRobot.Domain.Enums;
 using Xunit;
 
 namespace MarsRobot.Tests
