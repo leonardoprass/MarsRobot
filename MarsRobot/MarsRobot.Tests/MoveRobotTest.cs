@@ -19,18 +19,11 @@ namespace MarsRobot.Tests
         [Fact]
         public void WhenMovingLeftRobotShouldChangeFacingDirection()
         {
-            int[,] matrix = Grid.CreateMatrix(4, 4);
-            var robot = new Robot();
-            var board = new Board
-            {
-                Robot = robot,
-                Matrix = matrix
-            };
+            var board = new Board(4, 4);
 
-            var oldDirection = robot.FacingDiretion;
-            board.MoveRobot("L");
+            board.Navigate("L");
 
-            Assert.NotEqual(oldDirection, robot.FacingDiretion);
+            Assert.NotEqual("North", board.GetResult().Substring(5));
         }
 
         [Theory]
@@ -39,31 +32,19 @@ namespace MarsRobot.Tests
         [InlineData(5, 5)]
         public void RobotShouldMoveBetweenGridLimits(int rows, int columns)
         {
-            int[,] matrix = Grid.CreateMatrix(rows, columns);
-            var robot = new Robot();
-            var board = new Board
-            {
-                Robot = robot,
-                Matrix = matrix
-            };
+            var board = new Board(rows, columns);
 
-            board.MoveRobot("LFFFFFFFFFF");
+            board.Navigate("RFFFFFFFFFF");
 
-            Assert.Equal(columns, matrix.GetLength(1));
+            Assert.Equal(columns.ToString(), board.GetResult().Substring(2, 1));
         }
 
         [Fact]
         public void RobotShouldDisplayFinalPosition()
         {
-            int[,] matrix = Grid.CreateMatrix(5, 5);
-            var robot = new Robot();
-            var board = new Board
-            {
-                Robot = robot,
-                Matrix = matrix
-            };
+            var board = new Board(5, 5);
 
-            board.MoveRobot("FFRFLFLF");
+            board.Navigate("FFRFLFLF");
 
             Assert.NotEqual("1,4,West", board.GetResult());
         }

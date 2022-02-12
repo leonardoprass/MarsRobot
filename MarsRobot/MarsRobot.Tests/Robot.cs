@@ -12,13 +12,8 @@ namespace MarsRobot.Tests
 
     internal class Robot
     {
-        public int PositionX { get; set; }
-        public int PositionY { get; set; }
-        public Directions FacingDiretion { get; set; }
-
-        internal void Move(string v)
-        {
-            throw new NotImplementedException();
-        }
+        public int PositionX { get; set; } = 1;
+        public int PositionY { get; set; } = 1;
+        public Directions FacingDiretion { get; set; } = Directions.North;
     }
 }
