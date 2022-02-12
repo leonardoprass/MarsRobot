@@ -14,8 +14,8 @@ namespace MarsRobot.Tests
         {
             int[,] matrix = Grid.CreateMatrix(rows, columns);
 
-            Assert.Equal(matrix.GetLength(0), rows);
-            Assert.Equal(matrix.GetLength(1), columns);
+            Assert.Equal(rows, matrix.GetLength(0));
+            Assert.Equal(columns, matrix.GetLength(1));
         }
 
         [Fact]
