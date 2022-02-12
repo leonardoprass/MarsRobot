@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRobot.Client", "MarsRobot\MarsRobot.Client.csproj", "{C756FB1F-EBF1-4EBE-A8A7-D38571862984}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRobot.Application", "MarsRobot.Application\MarsRobot.Application.csproj", "{41327A7F-CB4C-4903-95BC-B52121ABD9C3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRobot.Domain", "MarsRobotDomain\MarsRobot.Domain.csproj", "{AEE61BF7-FFAB-453D-8808-DBF3168A59A4}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRobot.Tests", "MarsRobot.Tests\MarsRobot.Tests.csproj", "{FAA786D9-418D-4F0A-BBFB-F55CBC0BCFC6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRobot.Client", "MarsRobot.Client\MarsRobot.Client.csproj", "{1F7DCFC0-B51C-4754-BCD6-A6840A857CA4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MarsRobot.Domain", "MarsRobot.Domain\MarsRobot.Domain.csproj", "{42C021BD-1725-4AFB-B946-E9453D71CD94}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,22 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C756FB1F-EBF1-4EBE-A8A7-D38571862984}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C756FB1F-EBF1-4EBE-A8A7-D38571862984}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C756FB1F-EBF1-4EBE-A8A7-D38571862984}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C756FB1F-EBF1-4EBE-A8A7-D38571862984}.Release|Any CPU.Build.0 = Release|Any CPU
 		{41327A7F-CB4C-4903-95BC-B52121ABD9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{41327A7F-CB4C-4903-95BC-B52121ABD9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{41327A7F-CB4C-4903-95BC-B52121ABD9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{41327A7F-CB4C-4903-95BC-B52121ABD9C3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{AEE61BF7-FFAB-453D-8808-DBF3168A59A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{AEE61BF7-FFAB-453D-8808-DBF3168A59A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{AEE61BF7-FFAB-453D-8808-DBF3168A59A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{AEE61BF7-FFAB-453D-8808-DBF3168A59A4}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FAA786D9-418D-4F0A-BBFB-F55CBC0BCFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FAA786D9-418D-4F0A-BBFB-F55CBC0BCFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FAA786D9-418D-4F0A-BBFB-F55CBC0BCFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FAA786D9-418D-4F0A-BBFB-F55CBC0BCFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F7DCFC0-B51C-4754-BCD6-A6840A857CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F7DCFC0-B51C-4754-BCD6-A6840A857CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F7DCFC0-B51C-4754-BCD6-A6840A857CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F7DCFC0-B51C-4754-BCD6-A6840A857CA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42C021BD-1725-4AFB-B946-E9453D71CD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42C021BD-1725-4AFB-B946-E9453D71CD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42C021BD-1725-4AFB-B946-E9453D71CD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42C021BD-1725-4AFB-B946-E9453D71CD94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

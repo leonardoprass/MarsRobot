@@ -6,3 +6,9 @@
 /MarsRobot/MarsRobot.Application/obj
 /MarsRobot/MarsRobot.Tests/obj
 /MarsRobot/MarsRobotDomain/obj
+/MarsRobot/MarsRobot.Application/bin/Debug/net6.0
+/MarsRobot/MarsRobot.Client/obj
+/MarsRobot/MarsRobot.Domain/obj
+/MarsRobot/MarsRobot.Tests/bin/Debug/net6.0
+/MarsRobot/MarsRobot.Client/bin/Debug/net6.0
+/MarsRobot/MarsRobot.Domain/bin/Debug/net6.0
