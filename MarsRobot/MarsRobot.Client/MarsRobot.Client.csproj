@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MarsRobot.Application\MarsRobot.Application.csproj" />
+  </ItemGroup>
+
 </Project>

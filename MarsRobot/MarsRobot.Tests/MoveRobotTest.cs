@@ -88,7 +88,7 @@ namespace MarsRobot.Tests
 
             board.Navigate("FFRFLFLF");
 
-            Assert.NotEqual("1,4,West", board.GetResult());
+            Assert.Equal("1,1,West", board.GetResult());
         }
     }
 }
