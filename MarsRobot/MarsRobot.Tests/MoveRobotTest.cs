@@ -19,13 +19,53 @@ namespace MarsRobot.Tests
         }
 
         [Fact]
-        public void WhenMovingLeftRobotShouldChangeFacingDirection()
+        public void WhenMovingLeftRobotShouldFaceEast()
         {
             var board = new Board(4, 4);
 
             board.Navigate("L");
 
-            Assert.NotEqual("North", board.GetResult().Substring(5));
+            Assert.Equal("East", board.GetResult().Split(',')[2]);
+        }
+
+        [Fact]
+        public void WhenMoving2LeftRobotShouldFaceSouth()
+        {
+            var board = new Board(4, 4);
+
+            board.Navigate("LL");
+
+            Assert.Equal("South", board.GetResult().Split(',')[2]);
+        }
+
+        [Fact]
+        public void WhenMoving3LeftRobotShouldFaceWest()
+        {
+            var board = new Board(4, 4);
+
+            board.Navigate("LLL");
+
+            Assert.Equal("West", board.GetResult().Split(',')[2]);
+        }
+
+        [Fact]
+        public void WhenMoving4LeftRobotShouldFaceNorth()
+        {
+            var board = new Board(4, 4);
+
+            board.Navigate("LLLL");
+
+            Assert.Equal("North", board.GetResult().Split(',')[2]);
+        }
+
+        [Fact]
+        public void WhenMoving5LeftRobotShouldFaceEast()
+        {
+            var board = new Board(4, 4);
+
+            board.Navigate("LLLLL");
+
+            Assert.Equal("East", board.GetResult().Split(',')[2]);
         }
 
         [Theory]
