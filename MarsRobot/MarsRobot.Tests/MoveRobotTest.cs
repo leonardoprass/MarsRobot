@@ -19,13 +19,13 @@ namespace MarsRobot.Tests
         }
 
         [Fact]
-        public void WhenMovingLeftRobotShouldFaceEast()
+        public void WhenMovingLeftRobotShouldFaceWest()
         {
             var board = new Board(4, 4);
 
             board.Navigate("L");
 
-            Assert.Equal("East", board.GetResult().Split(',')[2]);
+            Assert.Equal("West", board.GetResult().Split(',')[2]);
         }
 
         [Fact]
@@ -39,13 +39,13 @@ namespace MarsRobot.Tests
         }
 
         [Fact]
-        public void WhenMoving3LeftRobotShouldFaceWest()
+        public void WhenMoving3LeftRobotShouldFaceEast()
         {
             var board = new Board(4, 4);
 
             board.Navigate("LLL");
 
-            Assert.Equal("West", board.GetResult().Split(',')[2]);
+            Assert.Equal("East", board.GetResult().Split(',')[2]);
         }
 
         [Fact]
@@ -59,13 +59,13 @@ namespace MarsRobot.Tests
         }
 
         [Fact]
-        public void WhenMoving5LeftRobotShouldFaceEast()
+        public void WhenMoving5LeftRobotShouldFaceWest()
         {
             var board = new Board(4, 4);
 
             board.Navigate("LLLLL");
 
-            Assert.Equal("East", board.GetResult().Split(',')[2]);
+            Assert.Equal("West", board.GetResult().Split(',')[2]);
         }
 
         [Theory]

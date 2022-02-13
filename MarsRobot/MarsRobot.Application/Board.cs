@@ -35,10 +35,17 @@ namespace MarsRobot.Application
 
         private void ChangeDirection(char command)
         {
+            var currentDirection = _robot.FacingDiretion;
             if (command == TurnLeftCommand)
-                _robot.FacingDiretion--;
+            {
+                var newDirection = ((int)currentDirection + 3) % 4;
+                _robot.FacingDiretion = (Directions)newDirection;
+            }
             else if (command == TurnRightCommand)
-                _robot.FacingDiretion++;
+            {
+                var newDirection = ((int)currentDirection + 1) % 4;
+                _robot.FacingDiretion = (Directions)newDirection;
+            } 
         }
 
         private void Move()
